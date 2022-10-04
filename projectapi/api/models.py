@@ -14,5 +14,5 @@ class SalesHistory(models.Model):
     actual_sales_value = models.IntegerField()
     actual_sales_value_uom = models.CharField(max_length=50)
 
-    def __str__(self) -> str:
+    def __int__(self):
         return self.saleshistory_id
