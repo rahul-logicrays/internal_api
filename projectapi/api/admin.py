@@ -3,4 +3,7 @@ from .models import SalesHistory
 
 # Register your models here.
 
-admin.site.register(SalesHistory)
+
+@admin.register(SalesHistory)
+class AdminSalesHistory(admin.ModelAdmin):
+    list_display = ['saleshistory_id']
